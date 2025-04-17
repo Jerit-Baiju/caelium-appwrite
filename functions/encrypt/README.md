@@ -1,6 +1,4 @@
-# ⚡ Python Starter Function
-
-A simple starter function. Edit `src/main.py` to get started and create something awesome! 🚀
+# encrypt
 
 ## 🧰 Usage
 
