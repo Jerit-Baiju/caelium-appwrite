@@ -1,0 +1,25 @@
+{
+    "projectId": "67ff3d8d001a3eb2ef28",
+    "functions": [
+        {
+            "$id": "6801088a0005ce337c2f",
+            "name": "encrypt",
+            "runtime": "python-3.12",
+            "specification": "s-1vcpu-1gb",
+            "execute": [
+                "any"
+            ],
+            "events": [],
+            "scopes": [
+                "users.read"
+            ],
+            "schedule": "",
+            "timeout": 15,
+            "enabled": true,
+            "logging": true,
+            "entrypoint": "src/main.py",
+            "commands": "pip install -r requirements.txt",
+            "path": "functions/encrypt"
+        }
+    ]
+}
