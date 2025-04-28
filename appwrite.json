@@ -1,9 +1,46 @@
 {
     "projectId": "67ff3d8d001a3eb2ef28",
+    "projectName": "Caelium",
+    "settings": {
+        "services": {
+            "account": true,
+            "avatars": true,
+            "databases": true,
+            "locale": true,
+            "health": true,
+            "storage": true,
+            "teams": true,
+            "users": true,
+            "functions": true,
+            "graphql": true,
+            "messaging": true
+        },
+        "auth": {
+            "methods": {
+                "jwt": true,
+                "phone": true,
+                "invites": true,
+                "anonymous": true,
+                "email-otp": true,
+                "magic-url": true,
+                "email-password": true
+            },
+            "security": {
+                "duration": 31536000,
+                "limit": 0,
+                "sessionsLimit": 10,
+                "passwordHistory": 0,
+                "passwordDictionary": false,
+                "personalDataCheck": false,
+                "sessionAlerts": false,
+                "mockNumbers": []
+            }
+        }
+    },
     "functions": [
         {
-            "$id": "6801088a0005ce337c2f",
-            "name": "encrypt",
+            "$id": "680fa5c1001878a6efd0",
+            "name": "upload",
             "runtime": "python-3.12",
             "specification": "s-1vcpu-1gb",
             "execute": [
@@ -19,7 +56,7 @@
             "logging": true,
             "entrypoint": "src/main.py",
             "commands": "pip install -r requirements.txt",
-            "path": "functions/encrypt"
+            "path": "functions/upload"
         }
     ]
 }

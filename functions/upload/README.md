@@ -1,4 +1,4 @@
-# encrypt
+# upload
 
 ## 🧰 Usage
 
