@@ -1,4 +1,5 @@
 import os
+
 import requests
 
 
@@ -7,7 +8,7 @@ def main(context):
         return context.res.text("Pong")
 
     if os.environ.get("env") == "dev":
-        data = open('/usr/local/server/src/function/src/data.json', 'r')
+        data = open("/usr/local/server/src/function/src/data.json", "r", encoding="utf-8")
         response = data.read()
         data.close()
     else:
