@@ -57,6 +57,26 @@
             "entrypoint": "src/main.py",
             "commands": "pip install -r requirements.txt",
             "path": "functions/upload"
+        },
+        {
+            "$id": "686e25d5003e2138099c",
+            "name": "send_email",
+            "runtime": "python-3.12",
+            "specification": "s-1vcpu-512mb",
+            "execute": [
+                "any"
+            ],
+            "events": [],
+            "scopes": [
+                "users.read"
+            ],
+            "schedule": "",
+            "timeout": 15,
+            "enabled": true,
+            "logging": true,
+            "entrypoint": "src/main.py",
+            "commands": "pip install -r requirements.txt",
+            "path": "functions/send_email"
         }
     ]
 }
