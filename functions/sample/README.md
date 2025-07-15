@@ -1,4 +1,4 @@
-# send_email
+# sample
 
 ## 🧰 Usage
 
