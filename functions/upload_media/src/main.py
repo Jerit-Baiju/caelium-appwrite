@@ -22,9 +22,6 @@ def main(context):
     basic_auth = base64.b64encode(f"{basic_auth_user}:{basic_auth_pass}".encode()).decode()
     headers = {"Authorization": f"Basic {basic_auth}"}
 
-    if context.req.path == "/ping":
-        return context.res.text("Pong")
-
     if context.req.method == "POST":
         # Get content type to determine how to parse the request
         content_type = context.req.headers.get("content-type", "")
