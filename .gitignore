@@ -132,3 +132,4 @@ celerybeat.pid
 .venv
 env/
 venv/
+.DS_Store
