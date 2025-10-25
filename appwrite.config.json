@@ -1,0 +1,78 @@
+{
+    "projectId": "67ff3d8d001a3eb2ef28",
+    "endpoint": "https://fra.cloud.appwrite.io/v1",
+    "projectName": "Caelium",
+    "settings": {
+        "services": {
+            "account": true,
+            "avatars": true,
+            "databases": true,
+            "locale": true,
+            "health": true,
+            "storage": true,
+            "teams": true,
+            "users": true,
+            "sites": true,
+            "functions": true,
+            "graphql": true,
+            "messaging": true
+        },
+        "auth": {
+            "methods": {
+                "jwt": true,
+                "phone": true,
+                "invites": true,
+                "anonymous": true,
+                "email-otp": true,
+                "magic-url": true,
+                "email-password": true
+            },
+            "security": {
+                "duration": 31536000,
+                "limit": 0,
+                "sessionsLimit": 10,
+                "passwordHistory": 0,
+                "passwordDictionary": false,
+                "personalDataCheck": false,
+                "sessionAlerts": false,
+                "mockNumbers": []
+            }
+        }
+    },
+    "functions": [
+        {
+            "$id": "68766b500012404a2121",
+            "execute": [
+                "any"
+            ],
+            "name": "sample",
+            "enabled": true,
+            "logging": true,
+            "runtime": "python-3.12",
+            "scopes": [
+                "users.read"
+            ],
+            "events": [],
+            "schedule": "",
+            "timeout": 15,
+            "entrypoint": "src/main.py",
+            "commands": "pip install -r requirements.txt",
+            "specification": "s-0.5vcpu-512mb",
+            "path": "functions/sample"
+        }
+    ],
+    "buckets": [
+        {
+            "$id": "685f49b60020d7bdfef4",
+            "$permissions": [],
+            "fileSecurity": false,
+            "name": "Cloud Files",
+            "enabled": true,
+            "maximumFileSize": 5000000000,
+            "allowedFileExtensions": [],
+            "compression": "none",
+            "encryption": false,
+            "antivirus": false
+        }
+    ]
+}
