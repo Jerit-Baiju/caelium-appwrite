@@ -59,6 +59,46 @@
             "commands": "pip install -r requirements.txt",
             "specification": "s-0.5vcpu-512mb",
             "path": "functions/sample"
+        },
+        {
+            "$id": "68fc81b3000f79624f22",
+            "name": "update_servers",
+            "runtime": "python-3.12",
+            "specification": "s-4vcpu-4gb",
+            "execute": [
+                "any"
+            ],
+            "events": [],
+            "scopes": [
+                "users.read"
+            ],
+            "schedule": "",
+            "timeout": 15,
+            "enabled": true,
+            "logging": true,
+            "entrypoint": "src/main.py",
+            "commands": "pip install -r requirements.txt",
+            "path": "functions/update_servers"
+        },
+        {
+            "$id": "68fca6db0002e6ecdd4e",
+            "name": "health_check",
+            "runtime": "python-3.12",
+            "specification": "s-4vcpu-4gb",
+            "execute": [
+                "any"
+            ],
+            "events": [],
+            "scopes": [
+                "users.read"
+            ],
+            "schedule": "",
+            "timeout": 15,
+            "enabled": true,
+            "logging": true,
+            "entrypoint": "src/main.py",
+            "commands": "pip install -r requirements.txt",
+            "path": "functions/health_check"
         }
     ],
     "buckets": [
