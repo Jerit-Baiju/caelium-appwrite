@@ -12,9 +12,9 @@ def main(context):
     for server in servers:
         
         if server["active_status"]:
-            resp = requests.post(f"{server['base_url']}/api/core/update_release/", json={"secret": os.environ["SECRET_KEY"]})
-            print(resp.status_code)
-            if resp.status_code != 200:
+            resp_update = requests.post(f"{server['base_url']}/api/core/update_release/", json={"secret": os.environ["SECRET_KEY"]})
+            print(resp_update.status_code)
+            if resp_update.status_code != 200:
                 resp = requests.post(
                     f"{server['base_url']}/api/core/update_server_status/",
                     json={"secret": os.environ["SECRET_KEY"], "server_id": server["id"]},
@@ -30,4 +30,4 @@ def main(context):
 
     print(servers)
 
-    return context.res.json(servers)
+    return context.res.json(resp_update)
