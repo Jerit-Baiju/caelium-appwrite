@@ -41,63 +41,43 @@
     },
     "functions": [
         {
-            "$id": "68766b500012404a2121",
-            "execute": [
-                "any"
-            ],
-            "name": "sample",
-            "enabled": true,
-            "logging": true,
-            "runtime": "python-3.12",
-            "scopes": [
-                "users.read"
-            ],
-            "events": [],
-            "schedule": "",
-            "timeout": 15,
-            "entrypoint": "src/main.py",
-            "commands": "pip install -r requirements.txt",
-            "specification": "s-0.5vcpu-512mb",
-            "path": "functions/sample"
-        },
-        {
             "$id": "68fc81b3000f79624f22",
-            "name": "update_servers",
-            "runtime": "python-3.12",
-            "specification": "s-4vcpu-4gb",
             "execute": [
                 "any"
             ],
-            "events": [],
+            "name": "update_servers",
+            "enabled": true,
+            "logging": true,
+            "runtime": "python-3.12",
             "scopes": [
                 "users.read"
             ],
+            "events": [],
             "schedule": "",
             "timeout": 15,
-            "enabled": true,
-            "logging": true,
             "entrypoint": "src/main.py",
             "commands": "pip install -r requirements.txt",
+            "specification": "s-4vcpu-4gb",
             "path": "functions/update_servers"
         },
         {
             "$id": "68fca6db0002e6ecdd4e",
-            "name": "health_check",
-            "runtime": "python-3.12",
-            "specification": "s-4vcpu-4gb",
             "execute": [
                 "any"
             ],
-            "events": [],
+            "name": "health_check",
+            "enabled": true,
+            "logging": true,
+            "runtime": "python-3.12",
             "scopes": [
                 "users.read"
             ],
+            "events": [],
             "schedule": "",
             "timeout": 15,
-            "enabled": true,
-            "logging": true,
             "entrypoint": "src/main.py",
             "commands": "pip install -r requirements.txt",
+            "specification": "s-4vcpu-4gb",
             "path": "functions/health_check"
         }
     ],
