@@ -10,7 +10,7 @@ def main(context):
 
     servers = requests.get("https://cs1.caelium.co/api/core/servers").json()
     for server in servers:
-        if server["active_status"]:
+        if not server["active_status"]:
             resp = requests.post(
                 f"{server['base_url']}/api/core/ping/", json={"secret": os.environ["SECRET_KEY"]}, timeout=5
             )
